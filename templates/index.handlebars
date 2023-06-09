@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+</head>
+<body>
+    <p>Hello {{name}}</p>
+    <p>We are pleased to provide you with the latest news and updates on {{category}}. Here are the top stories from today:</p>
+    {{#each articles}}
+        {{title}}
+        {{description}}
+        Read More: {{url}}
+    {{/each}}
+    <p>Thanks for choosing our service.</p>
+    <p>Best regards,</p>
+    <p>The Sportnewsify Team</p>
+</body>
+</html>
